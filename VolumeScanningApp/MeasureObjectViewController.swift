@@ -1,8 +1,8 @@
 //
-//  MeasureObject.swift
+//  MeasureObjectViewController.swift
 //  DistanceCalculator
 //
-//  Created by Kalindu Dahanyake on 12/9/21.
+//  Created by Kalindu Dahanyake on 23/1/22.
 //
 
 import UIKit

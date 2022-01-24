@@ -147,44 +147,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0e-hR-POt">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d0e-hR-POt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallcircle.fill.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="R8e-hK-I46">
-                                <rect key="frame" x="189" y="367.5" width="37" height="28"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejA-KY-EqW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejA-KY-EqW">
                                 <rect key="frame" x="149" y="710" width="117" height="49"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Sn1-Qo-aQV"/>
+                                    <constraint firstAttribute="height" constant="49" id="2ld-ai-p4E"/>
+                                    <constraint firstAttribute="width" constant="117" id="jNm-UI-1d8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <action selector="areaButton:" destination="Xi6-JE-43c" eventType="touchUpInside" id="9cY-o2-Wmm"/>
                                     <action selector="didPressOkButton:" destination="Xi6-JE-43c" eventType="touchUpInside" id="td0-WO-MVi"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="V2u-ca-y5e">
+                                <rect key="frame" x="191" y="387.5" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Sif-6w-A5b"/>
+                                    <constraint firstAttribute="height" constant="33" id="hHS-zM-Abk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tZL-qa-WMM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tZL-qa-WMM" firstAttribute="bottom" secondItem="R8e-hK-I46" secondAttribute="bottom" constant="412" id="0II-tz-0fS"/>
-                            <constraint firstItem="d0e-hR-POt" firstAttribute="trailing" secondItem="tZL-qa-WMM" secondAttribute="trailing" id="8a0-5U-qc9"/>
-                            <constraint firstItem="d0e-hR-POt" firstAttribute="leading" secondItem="tZL-qa-WMM" secondAttribute="leading" id="EDL-zR-jAB"/>
-                            <constraint firstItem="d0e-hR-POt" firstAttribute="bottom" secondItem="tZL-qa-WMM" secondAttribute="bottom" id="N7p-OC-lOI"/>
-                            <constraint firstItem="R8e-hK-I46" firstAttribute="leading" secondItem="tZL-qa-WMM" secondAttribute="leading" constant="189" id="Ne2-Wh-3Zd"/>
-                            <constraint firstItem="R8e-hK-I46" firstAttribute="top" secondItem="tZL-qa-WMM" secondAttribute="top" constant="367" id="PEk-uT-vV7"/>
-                            <constraint firstItem="ejA-KY-EqW" firstAttribute="bottom" secondItem="tZL-qa-WMM" secondAttribute="bottom" id="Tn4-NA-xMY"/>
-                            <constraint firstItem="d0e-hR-POt" firstAttribute="top" secondItem="FV1-56-B1H" secondAttribute="top" id="kJT-fN-hgD"/>
-                            <constraint firstItem="tZL-qa-WMM" firstAttribute="trailing" secondItem="R8e-hK-I46" secondAttribute="trailing" constant="188" id="kqJ-QX-ovZ"/>
-                            <constraint firstItem="tZL-qa-WMM" firstAttribute="trailing" secondItem="ejA-KY-EqW" secondAttribute="trailing" constant="20" id="oRr-Ip-JxL"/>
-                            <constraint firstItem="R8e-hK-I46" firstAttribute="leading" secondItem="tZL-qa-WMM" secondAttribute="leading" constant="189" id="rNh-K1-DFj"/>
-                            <constraint firstItem="R8e-hK-I46" firstAttribute="top" secondItem="tZL-qa-WMM" secondAttribute="top" constant="367" id="rQZ-z5-pzL"/>
-                            <constraint firstItem="tZL-qa-WMM" firstAttribute="bottom" secondItem="R8e-hK-I46" secondAttribute="bottom" constant="412" id="rqG-Vm-urN"/>
-                            <constraint firstItem="tZL-qa-WMM" firstAttribute="trailing" secondItem="R8e-hK-I46" secondAttribute="trailing" constant="188" id="ylj-qP-bIQ"/>
+                            <constraint firstItem="tZL-qa-WMM" firstAttribute="trailing" secondItem="V2u-ca-y5e" secondAttribute="trailing" constant="191" id="BEq-dN-jLf"/>
+                            <constraint firstItem="ejA-KY-EqW" firstAttribute="leading" secondItem="tZL-qa-WMM" secondAttribute="leading" constant="149" id="NJq-s1-fOc"/>
+                            <constraint firstItem="V2u-ca-y5e" firstAttribute="top" secondItem="tZL-qa-WMM" secondAttribute="top" constant="387" id="RD4-eJ-0kW"/>
+                            <constraint firstItem="tZL-qa-WMM" firstAttribute="trailing" secondItem="ejA-KY-EqW" secondAttribute="trailing" constant="148" id="rCF-Nb-czD"/>
+                            <constraint firstItem="V2u-ca-y5e" firstAttribute="leading" secondItem="tZL-qa-WMM" secondAttribute="leading" constant="191" id="uRT-il-7Lk"/>
+                            <constraint firstItem="tZL-qa-WMM" firstAttribute="bottom" secondItem="ejA-KY-EqW" secondAttribute="bottom" constant="49" id="uXw-B6-bZH"/>
+                            <constraint firstItem="ejA-KY-EqW" firstAttribute="top" secondItem="V2u-ca-y5e" secondAttribute="bottom" constant="290" id="yjw-XM-ial"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eL6-gC-7to"/>
@@ -202,7 +199,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera" catalog="system" width="128" height="94"/>
-        <image name="smallcircle.fill.circle" catalog="system" width="128" height="121"/>
+        <image name="cross.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

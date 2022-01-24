@@ -17,7 +17,7 @@ class MeasureObjectViewController: UIViewController, ARSCNViewDelegate {
     var meterValue: Double?
     var Distances = [Double]()
     var i = 0
-    var passingValue = "yoot"
+    var passingValue = ""
     var Area = Double()
     var finalDistance = Double()
     
@@ -28,8 +28,7 @@ class MeasureObjectViewController: UIViewController, ARSCNViewDelegate {
             if let vc = presentingViewController as? FirstViewController {
               //before dismissing the Form ViewController, pass the data inside the closure
                 dismiss(animated: true, completion: { [self] in
-                    print(passingValue)
-                    vc.setPet("yeet", Float(self.finalDistance), self.passingValue)
+                    vc.sendValues(Float(finalDistance), passingValue)
                 })
             }
         }
@@ -128,10 +127,6 @@ class MeasureObjectViewController: UIViewController, ARSCNViewDelegate {
         textNode.position = SCNVector3(x: xPos, y: yPos, z:zPos + 0.01)
         textNode.scale = SCNVector3(x: 0.01, y : 0.01, z: 0.01)
         scnView.scene.rootNode.addChildNode(textNode)
-    }
-    
-    @IBAction func areaButton(_ sender: Any) {
-        print("yuup")
     }
     
     

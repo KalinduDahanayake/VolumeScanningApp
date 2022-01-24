@@ -20,9 +20,8 @@ class FirstViewController: UIViewController {
     }
     
         
-    func setPet(_ pet: String, _ value: Float, _ type: String) {
+    func sendValues(_ value: Float, _ type: String) {
       //override the label with the parameter received in this method
-        print(pet)
         if (type == "Length") {
             lengthField.text = "\(value)"
         }
